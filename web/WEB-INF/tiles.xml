@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+		"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+		"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<!-- The main layout. -->
+	<definition name="mainLayout" template="/layout/mainLayout.jsp">
+		<put-attribute name="title" value="Scheduling_Sloth"/>
+		<put-attribute name="header" value="/header.jsp"/>
+	</definition>
+
+	<!-- The list screen for all lecturers. -->
+	<definition name="lecturerList" extends="mainLayout">
+		<put-attribute name="content" value="/lecturerList.jsp"/>
+	</definition>
+
+	<!-- The form for a single lecturer. -->
+	<definition name="lecturerForm" extends="mainLayout">
+		<put-attribute name="content" value="/lecturerForm.jsp"/>
+	</definition>
+
+    <!-- The list screen for all rooms. -->
+    <definition name="roomList" extends="mainLayout">
+        <put-attribute name="content" value="/roomList.jsp"/>
+    </definition>
+
+    <!-- The form for a single room. -->
+    <definition name="roomForm" extends="mainLayout">
+        <put-attribute name="content" value="/roomForm.jsp"/>
+    </definition>
+
+    <!-- The list screen for all cohorts. -->
+    <definition name="cohortList" extends="mainLayout">
+        <put-attribute name="content" value="/cohortList.jsp"/>
+    </definition>
+
+    <!-- The form for a single cohort. -->
+    <definition name="cohortForm" extends="mainLayout">
+        <put-attribute name="content" value="/cohortForm.jsp"/>
+    </definition>
+
+    <!-- The list screen for all centuries. -->
+    <definition name="centuryList" extends="mainLayout">
+        <put-attribute name="content" value="/centuryList.jsp"/>
+    </definition>
+
+    <!-- The form for a single century. -->
+    <definition name="centuryForm" extends="mainLayout">
+        <put-attribute name="content" value="/centuryForm.jsp"/>
+    </definition>
+
+    <!-- The list screen for all courses. -->
+    <definition name="courseList" extends="mainLayout">
+        <put-attribute name="content" value="/courseList.jsp"/>
+    </definition>
+
+    <!-- The form for a single course. -->
+    <definition name="courseForm" extends="mainLayout">
+        <put-attribute name="content" value="/courseForm.jsp"/>
+    </definition>
+
+    <!-- The list screen for all lessons. -->
+    <definition name="lessonList" extends="mainLayout">
+        <put-attribute name="content" value="/lessonList.jsp"/>
+    </definition>
+
+    <!-- The form for a single lesson. -->
+    <definition name="lessonForm" extends="mainLayout">
+        <put-attribute name="content" value="/lessonForm.jsp"/>
+    </definition>
+
+    <!-- The homepage. -->
+    <definition name="home" extends="mainLayout">
+        <put-attribute name="title" value="Willkommen" />
+        <put-attribute name="content" value="/home.jsp"/>
+    </definition>
+
+    <!-- The Error Page. -->
+    <definition name="error" extends="mainLayout">
+        <put-attribute name="content" value="/error.jsp"/>
+    </definition>
+
+</tiles-definitions>
